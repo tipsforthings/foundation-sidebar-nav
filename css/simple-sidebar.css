@@ -1,5 +1,7 @@
 /* ALXS Foundation Sidebar */
-
+body {
+  background: #000;
+  }
 /* Toggle Styles */
 .tab-bar,
 .tab-bar .menu-icon {
@@ -42,6 +44,7 @@ color: #999;
 #sidebar-wrapper.toggled {
     margin-left: -250px;
     z-index: 1000;
+    margin-top:  -2.8125rem;
     }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -56,6 +59,7 @@ color: #999;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    background: #FFF;
 }
 #page-content-wrapper.toggled {
     width: 100%;
@@ -112,6 +116,12 @@ color: #999;
     color: #fff;
     background: rgba(255,255,255,0.2);
 }
+#sidebar-wrapper.toggled .sidebar-nav li a:hover span{
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+}
+
 
 .sidebar-nav li a:active span,
 .sidebar-nav li a:focus span {
@@ -139,6 +149,7 @@ border-right: solid 1px #565656;
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
+        margin-top:  -2.8125rem;
     }
     #wrapper.toggled #page-content-wrapper {
         padding-left: 250px;

@@ -11,6 +11,16 @@
   </head>
   <body>
     <div id="wrapper">
+                <nav class="tab-bar">
+      <section class="left-small">
+        <a class="menu-icon" id="menu-toggle"><span></span></a>
+      </section>
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">Track My Mixes</h1>
+      </section>
+
+    </nav>
             <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -47,16 +57,6 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
           <div class="">
-                <nav class="tab-bar">
-      <section class="left-small">
-        <a class="menu-icon" id="menu-toggle"><span></span></a>
-      </section>
-
-      <section class="middle tab-bar-section">
-        <h1 class="title">Track My Mixes</h1>
-      </section>
-
-    </nav>
  
     <div class="row">
       <div class="large-12 columns">
@@ -220,6 +220,7 @@
         e.preventDefault();
         $("#page-content-wrapper").toggleClass("toggled");
         $("#sidebar-wrapper").toggleClass("toggled");
+        $(".sidebar-nav").toggleClass("toggled");
         $("#wrapper").toggleClass("toggled");
     });
     </script>
