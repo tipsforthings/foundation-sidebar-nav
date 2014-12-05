@@ -133,8 +133,14 @@ color: #999;
     background: none;
 }
 
+.tab-bar .menu-icon {
+border-right: solid 1px #565656;
+}
 @media(min-width:768px) {
     #wrapper {
+        padding-left: 250px;
+    }
+    #wrapper.toggled #page-content-wrapper {
         padding-left: 250px;
     }
 
