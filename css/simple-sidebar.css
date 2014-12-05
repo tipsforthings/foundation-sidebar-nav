@@ -44,9 +44,17 @@ color: #999;
 #sidebar-wrapper.toggled {
     margin-left: -250px;
     z-index: 1000;
-    margin-top:  -2.8125rem;
     }
-
+.tab-bar .fi {
+text-indent: 2.1875rem;
+width: 2.8125rem;
+height: 2.8125rem;
+display: block;
+padding: 0;
+color: white;
+position: relative;
+transform: translate3d(0, 0, 0);
+}
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }
