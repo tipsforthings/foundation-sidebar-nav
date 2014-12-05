@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
     <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/fixed-top-bar.css" rel="stylesheet">
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    <div id="wrapper">
                 <nav class="tab-bar">
       <section class="left-small">
         <a class="menu-icon" id="menu-toggle"><span></span></a>
@@ -21,6 +21,7 @@
       </section>
 
     </nav>
+    <div id="wrapper">
             <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -215,14 +216,6 @@
     <script>
       $(document).foundation();
     </script>
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#page-content-wrapper").toggleClass("toggled");
-        $("#sidebar-wrapper").toggleClass("toggled");
-        $(".sidebar-nav").toggleClass("toggled");
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+    <script src="js/toggle-class.js"></script>
   </body>
 </html>
